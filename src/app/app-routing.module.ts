@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
-import { InicioPageModule } from './paginas/inicio/inicio.module';
+import { InicioPageModule } from './pages/inic/inicio.module';
 
 const routes: Routes = [
   {
     path: 'inicio',
-    loadChildren: () => import('./paginas/inicio/inicio.module').then( m => m.InicioPageModule)
+    loadChildren: () => import('./pages/inic/inicio.module').then( m => m.InicioPageModule)
   },
   {
     path: '',
@@ -14,11 +14,11 @@ const routes: Routes = [
   },
   {
     path: 'input-form',
-    loadChildren: () => import('./paginas/input-form/input-form.module').then( m => m.InputFormPageModule)
+    loadChildren: () => import('./pages/form/input-form.module').then( m => m.InputFormPageModule)
   },
   {
     path: 'alertas',
-    loadChildren: () => import('./paginas/alertas/alertas.module').then( m => m.AlertasPageModule)
+    loadChildren: () => import('./pages/aler/alertas.module').then( m => m.AlertasPageModule)
   }
 ];
 

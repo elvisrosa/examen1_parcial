@@ -19,25 +19,24 @@ export class AlertasPage implements OnInit {
 
   async presentAlertForm(){
     const alertas = this.ctr.create({
-      header:'Datos para Ingresar',
+      header:'ALERTA - FORMULARIO',
       buttons:[
         {
-          text:'Cancelar',
+          text:'Cancel',
           role:'Cancel' 
         },
         {
-          text:'Ok',
-          role:'Cancel'
+          text:'OK'
         }
       ],
       inputs:[
         {
           type:'text',
-          placeholder:'Nombres'
+          placeholder:'ulises'
         },
         {
           type:'text',
-          placeholder:'Apellido'
+          placeholder:'ramos'
         },
         {
           type:'text',
@@ -45,7 +44,7 @@ export class AlertasPage implements OnInit {
         },
         {
           type:'url',
-          placeholder:'URL'
+          placeholder:'https://youtube.com'
         },
         {
           type:'date'
@@ -60,7 +59,7 @@ export class AlertasPage implements OnInit {
         },
         {
           type:'number',
-          placeholder:'Edad'
+          placeholder:'edad'
         }
       ]
 

@@ -10,9 +10,9 @@ export class InputFormPage implements OnInit {
   constructor() { }
   nombre:string='';
 
-  usuarios={
-    email:'',
-    password:''
+  personas={
+    correo:'',
+    contrasenna:''
   }
 
   ngOnInit() {

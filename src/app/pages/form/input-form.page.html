@@ -21,13 +21,13 @@
 
         <ion-item>
             <ion-label>Email: </ion-label>
-            <ion-input type="email" placeholder="email@domain.com" name="email" [(ngModel)]="usuarios.email"
+            <ion-input type="email" placeholder="email@domain.com" name="email" [(ngModel)]="personas.correo"
                 required></ion-input>
         </ion-item>
 
         <ion-item>
             <ion-label>Password input</ion-label>
-            <ion-input type="password" name="password" placeholder="Contraseña" required></ion-input>
+            <ion-input type="password" name="password" placeholder="Contraseña" [(ngModel)]="personas.contrasenna" required></ion-input>
         </ion-item>
 
         <ion-button type="submit" expand="block" color="primary" [disabled]="formulario.invalid">
